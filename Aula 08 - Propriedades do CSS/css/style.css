@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {font-family: Roboto, sans-serif;}
+
+body{
+    background-color: #131313;
+    }
+
+h1{
+    color: white;
+    font-family: roboto;    
+}
+
+.media-picture {
+    height: 500px;
+    background-image: url(/img/Filme.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.review-score{
+    padding: 12px;
+    color: white;
+    background-color: #e6bd09;
+}
+
+h2{
+    color: steelblue;
+}
+
+p{
+    color: #bdbdbd;
+    font-family: roboto;
+    text-align: justify;
+}
+
+a{
+    color: white;
+    padding: 12px;
+    background-color: #e6bd09;
+
+}
