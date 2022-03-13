@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Notable&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    --cor-principal: #fff;
+    --cor-segundaria:  #23232e;
+    --cor-text: #fff;
+    
+}
+
+a {
+    color: var(--cor-text);
+    text-decoration: none;
+    }
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    background-color: var(--cor-segundaria);
+    height: 8vh;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))  
+}
+.nav_list{
+    display: flex;
+    list-style: none;
+}
+.nav_list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+    
+}
+.banner {
+    background: url(/img/Vila-Madalena.jpg);
+    ;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5))  ;
+    fill-opacity: 0.5;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bolder;
+    text-shadow: (0px 4px 4px rgba(0, 0, 0, 0.5));
+    font-family: notable;
+    letter-spacing: 2px;
+    text-align: center;
+ }
+ .titulo{
+     padding-left: 10%;
+     padding-top: 50px;
+     padding-bottom: 35px;
+     font-size: 37px;
+     background-color: #E5E5E5;
+     color: #23232e;
+     
+
+ }
+.container-cards{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #E5E5E5;
+}
+ .card{
+     width: 500px;
+     height: 650px;
+     background-color: var(--cor-segundaria);
+     border-radius: 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 10px;
+     padding: 10px;
+     color: #fff;
+     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))  
+
+ }
+ .card__img img{
+    width: 500px;
+    height: 300px;
+    border: 5px;
+    border-color: #fff;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 10px;  
+ }
+.card__titulo{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+ p{
+     text-align: justify;
+     gap: 10px;
+     font-size: 16px;
+     padding-top: 10px;
+     padding: 10px
+    
+}
+.video{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E5E5;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+
+}
+br{
+    background-color: #E5E5E5
+}
+
+.video img{
+    width: 1024px;
+    height: 768px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))  
+}
+
+footer{
+    width: 100%;
+    height: 20vh;
+    background-color: #23232e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center ;
+    color: #fff
+}
+
+.footer__links a {
+   padding: 50px;
+
+  
+}
+
+.footer__links img{
+    width: 100px;
+    gap: 20px;
+    
+
+}
