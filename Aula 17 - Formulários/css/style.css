@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, serif;
+  }
+  
+  html {
+    font-size: 18px;
+  }
+  
+  .formulario {
+    /*https://cssgradient.io/*/
+    background-image: linear-gradient(360deg, #e0c3fc 0%, #8ec5fc 100%);
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .formulario h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  form {
+      display: flex;
+      flex-direction: column;
+      gap:20px;
+      justify-content: center;
+  }
+  
+  .dados {   
+      width: 100%;
+      padding:10px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      border: 1px solid #e0c3fc;
+  }
+  
+  label {
+      display: block;
+      margin-bottom: 2px;
+  }
+  
+  input[type=text],[type=email],[type=tel], .sobre textarea {
+      border-radius: 5px;
+      border: 1px solid #e0c3fc;
+      outline: none;
+      width: 100%;    
+      font-size:0.8rem;
+      padding: 5px;
+      opacity: 0.8;   
+  }
+  
+  input[type=text],[type=email],[type=tel] {
+      height: 40px;
+  }
+  
+  .sobre textarea {
+      resize: none;
+      width: 100%;
+      height: 100px;
+  }
+  
+  input::placeholder {
+      color: black;
+  }
+  
+  .espDev input, .tipoTrab input, .tecnologias input {
+      margin-left: 20px; 
+  }
+  
+  .nivelExp select {
+      width: 50%;
+      height: 40px;
+      padding: 10px;
+      font-size: 15px;
+  }
+  
+  
+  .botoes {
+      display: flex;
+      justify-content: center;
+  }
+  
+  /*https://cssgradient.io/gradient-backgrounds/*/
+  .botoes input {
+     border: none;
+     background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%);
+     margin: 10px;
+     padding: 15px 45px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     box-shadow: 0 0 20px #eee;
+     border-radius: 10px;
+     display: block;
+     font-size: 1rem;
+    
+   }
+  
+   .botoes input:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+     cursor: pointer;
+  
+   }
+  
+  
+  @media(max-width: 968px) {
+  
+      html {
+          font-size: 10px;
+      }
+      
+      .botoes {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+  }
