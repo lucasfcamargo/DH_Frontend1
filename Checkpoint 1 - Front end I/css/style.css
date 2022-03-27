@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Notable&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@700&family=Montserrat:wght@100&family=Notable&display=swap');
 
 *{
     box-sizing: border-box;
@@ -8,23 +8,39 @@
     --cor-principal: #fff;
     --cor-segundaria:  #23232e;
     --cor-text: #fff;
+    --largura-max: 100%
     
 }
+html {
+    width: var(--largura-max);
+    font-size: 10px;
+    }
 
 a {
     color: var(--cor-text);
     text-decoration: none;
     }
+a:hover{
+   transform: scale(1.1);
+   font-weight: bolder;
 
-
-nav{
+}
+header{
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-weight: bold;
     background-color: var(--cor-segundaria);
     height: 8vh;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))  
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-size: 2rem;  
+}
+.logo{
+    font-family: bangers;
+    letter-spacing: 3px;
+    font-size: 5rem;
+    font-weight:bolder;
+    color: #ed1e79;
 }
 .nav_list{
     display: flex;
@@ -33,12 +49,13 @@ nav{
 .nav_list li {
     letter-spacing: 3px;
     margin-left: 32px;
-    
 }
+
+
 .banner {
     background: url(/img/Vila-Madalena.jpg);
     ;
-    width: 100%;
+    width: var(--largura-max);
     height: 40vh;
     background-size: cover;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5))  ;
@@ -46,7 +63,7 @@ nav{
     display:flex;
     justify-content: center;
     align-items: center;
-    font-size: 32px;
+    font-size: 5rem;
     font-weight: bolder;
     text-shadow: (0px 4px 4px rgba(0, 0, 0, 0.5));
     font-family: notable;
@@ -57,7 +74,7 @@ nav{
      padding-left: 10%;
      padding-top: 50px;
      padding-bottom: 35px;
-     font-size: 37px;
+     font-size: 4rem;
      background-color: #E5E5E5;
      color: #23232e;
      
@@ -69,10 +86,10 @@ nav{
     padding-left: 5%;
     padding-right: 5%;
     background-color: #E5E5E5;
+    gap: 20px;
 }
  .card{
-     width: 500px;
-     height: 650px;
+     width: 30%;
      background-color: var(--cor-segundaria);
      border-radius: 10px;
      display: flex;
@@ -85,36 +102,33 @@ nav{
 
  }
  .card__img img{
-    width: 500px;
-    height: 300px;
+    width: 100%;
     border: 5px;
     border-color: #fff;
     border-radius: 5px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 10px;  
+    padding: 2px;  
  }
 .card__titulo{
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: bold;
     letter-spacing: 2px;
 }
  p{
      text-align: justify;
      gap: 10px;
-     font-size: 16px;
+     font-size: 1.5rem ;
      padding-top: 10px;
      padding: 10px
     
 }
 .video{
     width: 100%;
-    height: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #E5E5E5;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px;
 
 
 }
@@ -122,9 +136,8 @@ br{
     background-color: #E5E5E5
 }
 
-.video img{
-    width: 1024px;
-    height: 768px;
+.video iframe{
+    width: 100%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))  
 }
 
@@ -136,18 +149,149 @@ footer{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center ;
-    color: #fff
+    color: #fff;
+    padding: 100px;
 }
 
 .footer__links a {
    padding: 50px;
-
-  
 }
 
 .footer__links img{
     width: 100px;
     gap: 20px;
-    
+}
+.footer__links a img:hover{
+        transform: scale(1.1);
 
 }
+@media (max-width: 1280px) {
+    html {
+      font-size: 9px;
+    }
+    header {
+      height: 8vh;
+    }
+    .container-cards {
+      padding-top: 50px;
+    }
+    .card {
+      width: 30%;
+    }
+    .curiosidades__card {
+      height: 500px;
+    }
+    .video {
+      padding-top: 50px;
+      padding-bottom: 80px;
+    }
+    .video iframe {
+      width: 750px;
+      height: 422px;
+    }
+    footer {
+      height: 20vh;
+    }
+  }
+
+  @media (max-width: 800px) {
+    html {
+      font-size: 10px;
+    }
+    header {
+      height: 10vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+    }
+    .titulo{
+        display: flex;
+        justify-content: center;
+        padding-left: 0;}
+    
+    .container-cards {
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 8vh;
+    }
+    .card {
+      width: 70%;
+    }
+    .curiosidades__card {
+      height: 500px;
+    }
+    .video {
+      padding-top: 10px;
+      padding-bottom: 80px;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    .video iframe {
+      width: 750px;
+      height: 422px;
+    }
+    footer {
+      height: 20vh;
+      padding: 30px;
+      }
+    .footer__links{
+        display: flex;
+    }
+    .footer__links a {
+        padding: 20px;
+  }
+
+  
+  @media (max-width: 480px) {
+    html {
+      font-size: 7px;
+    }
+    header {
+      height: 8vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+    }
+    .titulo{
+        display: flex;
+        justify-content: center;
+        padding-left: 0;}
+    
+    .container-cards {
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 2vh;
+    }
+    .card {
+      width: 70%;
+    }
+    .curiosidades__card {
+      height: 500px;
+    }
+    .video {
+      padding-top: 10x;
+      padding-bottom: 80px;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    .video iframe {
+      width: 750px;
+      height: 422px;
+    }
+    footer {
+      height: 20vh;
+      padding: 30px;
+      }
+    .footer__links{
+        display: flex;
+    }
+    .footer__links a {
+        padding: 20px;}
