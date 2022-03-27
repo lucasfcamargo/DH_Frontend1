@@ -97,7 +97,7 @@ nav ul li a::before{
 
 .social ul li a:hover{
     background-color: black;
-    transform: scale(1.3);
+    padding: 10px 30px;
     /* transform: ; */
 }
 
