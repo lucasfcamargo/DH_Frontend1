@@ -23,7 +23,6 @@ a {
 a:hover{
    transform: scale(1.1);
    font-weight: bolder;
-
 }
 header{
     display: flex;
@@ -53,7 +52,7 @@ header{
 
 
 .banner {
-    background: url(/img/Vila-Madalena.jpg);
+    background-image: url(../img/mada.jpg);
     ;
     width: var(--largura-max);
     height: 40vh;
@@ -295,3 +294,5 @@ footer{
     }
     .footer__links a {
         padding: 20px;}
+    }
+  }
